@@ -1,0 +1,95 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int dia,mes,aio;
+    cout<<"Ingrese su fecha de nacimiento";
+    cout<<"Día: ";
+    cin>>dia;
+    cout<<"Mes: ";
+    cin>>mes;
+    cout<<"Año: ";
+    cin>>aio;
+    if (aio%2==0){
+        if (mes==1 && mes==2 && mes==3){
+            if (dia%2==0){
+                cout<<"Tu angel es Miguel";
+            }
+            else{
+                cout<<"Tu angel es Gabriel";
+            }
+
+        }
+        if (mes==4 && mes==5 && mes==6){
+            if (dia%2==0){
+                cout<<"Tu angel es Jofiel";
+            }
+            else{
+                cout<<"Tu angel es Raziel";
+            }
+
+        }
+        if (mes==7 && mes==8 && mes==9){
+            if (dia%2==0){
+                cout<<"Tu angel es Chamuel";
+            }
+            else{
+                cout<<"Tu angel es Selatiel";
+            }
+
+        }
+        if (mes==10 && mes==11 && mes==12){
+            if (dia%2==0){
+                cout<<"Tu angel es Ariel";
+            }
+            else{
+                cout<<"Tu angel es Jeremiel";
+            }
+
+        }
+    }
+    else{
+        if (mes==1 && mes==2 && mes==3){
+            if (dia%2==0){
+                cout<<"Tu angel es Rafael";
+            }
+            else{
+                cout<<"Tu angel es Uriel";
+            }
+
+        }
+        if (mes==4 && mes==5 && mes==6){
+            if (dia%2==0){
+                cout<<"Tu angel es Barachiel";
+            }
+            else{
+                cout<<"Tu angel es Judiel";
+            }
+
+        }
+        if (mes==7 && mes==8 && mes==9){
+            if (dia%2==0){
+                cout<<"Tu angel es Zadquiel";
+            }
+            else{
+                cout<<"Tu angel es Metatron";
+            }
+
+        }
+        if (mes==10 && mes==11 && mes==12){
+            if (dia%2==0){
+                cout<<"Tu angel es Anael";
+            }
+            else{
+                cout<<"Tu angel es AZrael";
+            }
+
+        }
+
+
+    }
+
+
+
+        return 0;}
+
