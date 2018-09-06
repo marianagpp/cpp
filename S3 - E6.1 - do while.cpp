@@ -11,6 +11,6 @@ int main() {
     do{
         cout << c <<"\n";
         }
-    while (x--);
+    while (--x);
 
     return 0;}
