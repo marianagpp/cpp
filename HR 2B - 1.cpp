@@ -1,36 +1,56 @@
 #include <iostream>
-#include <iomanip>
 #include <math.h>
+#include <iomanip>
+
 using namespace std;
 
-int main() {
+int main(){
 
-    int m, n;
+    int filas, columnas, contador=1;
     int fil, col;
-    cin >> m >> n;
-    cin >> fil >> col;
 
-    int a[m][n];
+    cin>>filas>>columnas;
+    cin>>fil>>col;
 
-    for (int i=0; i<n; i++) {
-        for (int j = 0; j < n; j++) {
-            a[i][j] = i;}}
+    int numeros[filas][columnas];
 
-    for (int i=0; i<n; i++) {
-        for (int j = 0; j < n; j++) {
-            cout << setw(5) << a[m][n] << " ";}
-        cout << "\n";}
+    for(int i=0; i< filas; i++) {
+        for(int j=0; j < columnas; j++) {
+            numeros[i][j] = contador;
+            contador++;}}
 
-    double sumafil=0;
-    for (int i=0; i<n; i++)
-        sumafil += a[fil][i];
+    //for(int i=0;i<filas;i++) {
+    //    for(int j=0;j<columnas;j++) {
+    //        cout<<numeros[i][j]<<" ";
+    //    }
+    //    cout<<"\n"; }
 
-    double sumacol=0;
-    for (int i=0; i<m; i++)
-        sumacol += a[i][col];
 
-    double sumatotal;
-    sumatotal = sqrt(pow(sumacol, 2) + pow(sumafil, 2));
+    // suma de filas
+    int sumasf[filas];
+    for (int i=0; i<filas; i++){
+        int suma = 0;
+        for (int j=0; j<filas; j++)
+            suma += numeros[i][j];
+        sumasf[i] = suma;
+    }
+    //cout << sumasf[fil]<<endl;
 
-    cout << sumatotal;
+    // suma de columnas
+    int sumasc[columnas];
+    for (int i=0; i<columnas; i++){
+        int suma = 0;
+        for (int j=0; j<columnas; j++){
+
+            suma += numeros[j][i];}
+            sumasc[i] = suma;
+    }
+    //cout << sumasc[col]<<endl;
+
+    float sumatotal;
+    sumatotal = sqrt(pow(sumasc[col],2)+pow(sumasf[fil],2));
+
+    cout << fixed << setprecision(4) << sumatotal;
+
+    return 0;
 }
