@@ -1,0 +1,31 @@
+Propuestas de proyectos PR1.
+Elaborar un programa que simule el movimiento aleatorio de una partícula
+en un espacio de N*N. Dado un valor determinado de N. Considerar solo
+matrices de tamaño impar. Si N es par considerar el siguiente valor impar.
+En cada movimiento de la partícula esta se puede mover aleatoriamente al
+norte, sur, este u oeste con la probabilidad de 1⁄4, independiente del
+movimiento anterior.
+Ejecutar el programa mientras la partícula no toque uno de los bordes. Se
+considera tocar un borde cuando el siguiente movimiento implica una
+posición mayor o menor a los extremos de la matriz. Es decir si se encuentra
+en la posición 0 una posición -1, si se encuentra en la posición n-1 a la
+posición n y así.
+Considerar las siguientes respuestas del programa.
+Las salidas:
+a) Calcular la distancia recorrida por la partícula hasta alcanzar
+cualquiera de los bordes de la matriz N*N. El punto de partida es el
+centro. Si N es par, considerar como punto de partida cualquiera de
+los 4 puntos equidistantes del centro a los bordes.
+b) Calcular la distancia recorrida por la partícula hasta alcanzar
+cualquiera de los bordes de la matriz N*N. El punto de partida es un
+punto aleatorio dentro de la matriz N*N generado automáticamente
+por el programa.
+c) Dado un número N y un punto generado aleatoriamente dentro de la
+matriz N*N. Calcular si la partícula alcanza al punto aleatorio o
+alcanza el borde de la matriz. Es decir ahora el programa termina si
+alcanza el punto aleatorio o cualquiera de los bordes, el punto de
+partida es el punto en el centro de la matriz.
+d) Dado un numero N y un número M. Mostrar el porcentaje de veces
+que la partícula toca los bordes o toca un punto aleatorio dentro de
+la matriz N*N, el punto de partida es el punto en el centro de la
+matriz.
