@@ -52,7 +52,8 @@ int main(){
 
 
     // movimientos
-        for (int w=1; w<X+1; w++){ // menor que movimientos
+    int w;
+    for (w=1; w<X+1; w++){ // menor que movimientos
             int r=rand()%4;
             cout << "Matriz movimiento "<<w<<":"<< endl;
             switch (r) {
@@ -96,8 +97,8 @@ int main(){
                     cout << "\n";
                     break;
             }}
-
-cout<<"El porcentaje de veces que la secuencia toca un borde o el punto es "<<X<<endl;
+int P=w%100; // w no es
+cout<<"El porcentaje de veces que la secuencia toca un borde o el punto es "<<P<< "%" <<endl;
 
     return 0;}
 
