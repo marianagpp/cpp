@@ -7,8 +7,11 @@ int main(){
     int n, m, c, v, h, X;
     cout<<"Digite el tamanio de la matriz: ";
     cin>>n;
+    cout<<"Ingrese el numero de movimientos que desea realizar: ";
+    cin>>X;
     if (n%2==0){n += 1;}
     m=n;
+    c = n/2 + 1;
     int a[n][m];
     srand(time(nullptr));
 
@@ -21,13 +24,11 @@ int main(){
         cout << "\n";}
     cout << "\n";
 
-    // matriz posicion aleatoria
-    cout<<"Matriz posicion aleatoria:"<<endl;
-    int rn=rand()%n+1;
-    int rm=rand()%m+1;
+    // matriz posicion centro
+    cout<<"Matriz posicion centro:"<<endl;
     for(int i=0;i<n;i++){
-        h=n-rn;
-        v=m-rm;
+        h=n-c;
+        v=m-c;
         a[h][v]=1;
         for(int j=0;j<m;j++){
             cout<< setw(5) << a[i][j] <<" ";}
@@ -37,8 +38,8 @@ int main(){
 
     // matriz punto aleatorio
     cout<<"Matriz punto aleatorio:"<<endl;
-    rn=rand()%n+1;
-    rm=rand()%m+1;
+    int rn=rand()%n+1;
+    int rm=rand()%m+1;
     int ph, pv;
     for(int i=0;i<n;i++){
         ph=n-rn;
@@ -51,8 +52,7 @@ int main(){
 
 
     // movimientos
-    for (int k=0; h!=ph || v!=pv; k++) // si toca punto
-        for (int w=1; h<n || v<m; w++){ // si toca borde
+        for (int w=1; w<X+1; w++){ // menor que movimientos
             int r=rand()%4;
             cout << "Matriz movimiento "<<w<<":"<< endl;
             switch (r) {
@@ -96,6 +96,8 @@ int main(){
                     cout << "\n";
                     break;
             }}
+
+cout<<"El porcentaje de veces que la secuencia toca un borde o el punto es "<<X<<endl;
 
     return 0;}
 
