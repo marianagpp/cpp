@@ -96,7 +96,7 @@ int main(){
                     cout << "\n";
                     break;
             }}
-
+cout<<"La particula ha alcanzado un borde o el punto aleatorio."<<endl;
     return 0;}
 
 //La matriz es de dimensiones impar.
