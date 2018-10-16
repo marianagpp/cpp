@@ -36,8 +36,9 @@ int main(){
     cout << "\n";
 
     // movimientos
+    int w;
     for (int k=0; v<m-1; k++)
-        for (int w=1; h<n-1; w++){
+        for (w=1; h<n-1; w++){
             int r=rand()%4;
             cout << "Matriz movimiento "<<w<<":"<< endl;
             switch (r) {
@@ -81,7 +82,7 @@ int main(){
                     cout << "\n";
                     break;
             }}
-
+cout<<"La distancia recorrida por la particula antes de tocar un borde es "<<w<<endl;
     return 0;}
 
 //La matriz puede ser de dimensiones par.
