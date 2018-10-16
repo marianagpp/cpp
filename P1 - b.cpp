@@ -82,7 +82,7 @@ int main(){
                     cout << "\n";
                     break;
             }}
-
+cout<<"La distancia recorrida por la particula antes de tocar un borde es "<<w<<endl;
     return 0;}
 
 //La matriz es de dimensiones impar.
