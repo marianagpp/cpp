@@ -108,9 +108,9 @@ int main(){
                                 cout << "\n";}
                             v=v-1;
                             cout << "\n";
-                            break;
-                    }}
+                            break;}}
             break;}
+
         case 1:{
             int n, m, c, v, h;
             cout<<"Digite el tamanio de la matriz: ";
@@ -120,7 +120,6 @@ int main(){
             m=n;
             int a[n][m];
             srand(time(nullptr));
-
 
             // matriz inicial
             cout<<"Matriz inicial:"<<endl;
@@ -145,7 +144,7 @@ int main(){
 
             // movimientos
             //for (int k=0; v<m-1; k++)
-            int w;
+                int w;
                 for (w=1; h>=0 && v>=0 && h<n && v<m; w++){
                     int r=rand()%4;
                     cout << "Matriz movimiento "<<w<<":"<< endl;
@@ -188,8 +187,7 @@ int main(){
                                 cout << "\n";}
                             v=v-1;
                             cout << "\n";
-                            break;
-                    }}
+                            break;}}
             cout<<"La distancia recorrida por la particula antes de tocar un borde es "<<w<<endl;
             break;}
 
@@ -201,7 +199,7 @@ int main(){
             m=n;
             int a[n][m];
             srand(time(nullptr));
-            c = (n/2)+1;
+            //c = (n/2)+1;
 
             // matriz inicial
             cout<<"Matriz inicial:"<<endl;
@@ -271,8 +269,7 @@ int main(){
                                 cout << "\n";}
                             v=v-1;
                             cout << "\n";
-                            break;
-                    }}
+                            break;}}
             cout<<"La distancia recorrida por la particula antes de tocar un borde es "<<w<<endl;
             break;}
 
@@ -322,9 +319,8 @@ int main(){
                 cout<<"\n";}
             cout << "\n";
 
-
             // movimientos
-            for (int k=0; h-1<ph || v-1<pv; k++) // si toca punto??
+            while (h!=ph || v!=pv){ // si toca punto??
                 for (int w=1; h>=0 && v>=0 && h<n && v<m; w++){ // si toca borde
                     int r=rand()%4;
                     cout << "Matriz movimiento "<<w<<":"<< endl;
@@ -367,8 +363,7 @@ int main(){
                                 cout << "\n";}
                             v=v-1;
                             cout << "\n";
-                            break;
-                    }}
+                            break;}}}
             cout<<"La particula ha alcanzado un borde o el punto aleatorio."<<endl;
             break;}
 
@@ -419,7 +414,6 @@ int main(){
                 cout<<"\n";}
             cout << "\n";
 
-
             // movimientos
             int w;
             for (w=1; w<X+1; w++){ // menor que movimientos
@@ -464,15 +458,9 @@ int main(){
                             cout << "\n";}
                         v=v-1;
                         cout << "\n";
-                        break;
-                }}
-            int P=w%100; // w no es
+                        break;}}
+            int P=X/w%100; // w no es
             cout<<"El porcentaje de veces que la secuencia toca un borde o el punto es "<<P<< "%" <<endl;
             break;}
-
-
-
-
-
     }
     return 0;}
